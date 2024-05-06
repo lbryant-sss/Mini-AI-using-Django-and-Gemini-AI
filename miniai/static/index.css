@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Nav bar styles*/
+.nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #05445E;
+    height: 60px;
+    color: #D4F1F4;
+    position: relative;
+    box-shadow: 0 10px 10px 0 #189AB4;
+}
+.logo {
+    font-size: 16px;
+    padding: 20px;
+}
+
+/*gemini logo*/
+.gemini_logo {
+    position: fixed;
+    bottom: 3px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    z-index: 100;
+    border-radius: 5px;
+}
+.gemini svg{
+    width: 100px;
+    height: 50px;
+}
+
+/* Chat area*/
+.chat_box {
+    color: #D4F1F4;
+    height: calc(100vh - 75px);
+    background-color: #189AB4;
+    width: 70vw;
+    border: none;
+    margin: 0 auto;
+    border-radius: 20px;
+    position: relative;
+}
+
+.top_part {
+    display: flex;
+    height: 40px;
+    padding: 12px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.top_part img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
+}
+
+.top_part p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+.top_part span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/*text box deco*/
+.text_box {
+    position: relative;
+    height: calc(90% - 3px);
+    width: 90%;
+    background-color: #05445E;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 3px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+/*input area*/
+.input_box {
+    position: fixed;
+    bottom: 20px;
+    height: 50px;
+    left: 20%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input_field {
+    position: relative;
+    height: 40px;
+    border-radius: 30px;
+    width: 700px;
+    padding: 12px;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.input_box button {
+    background-color: #05445E;
+    padding-bottom: 10px;
+    border-radius: 40px;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+@media screen and (max-width: 900px) {
+    .input_field {
+        width: 370px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #fff;
+}
+
+/*Chat response and prompt deco*/
+.chat_message {
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    color: #222;
+    width: 100%;
+}
+
+.chat-user {
+    background-color: #75E6DA;
+    text-align: left;
+    padding: 15px;
+}
+
+.chat-response {
+    padding: 35px;
+    background-color: #D4F1F4;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.chat_display {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
