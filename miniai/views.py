@@ -4,7 +4,7 @@ import markdown
 import google.generativeai as genai
 
 #keep it secret, I'll delete mine after this project
-GEMINI_API_KEY = 'AIzaSyAHJf66uQqUKcIjSHiLC4aXQVHQvGKCDsI'
+GEMINI_API_KEY = API_KEY
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel('gemini-pro')
 
